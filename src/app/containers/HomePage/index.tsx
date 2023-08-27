@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import tw from "twin.macro";
+import { Navbar } from "../../components/navbar";
 
 const PageContainer = styled.div`
   ${tw`
@@ -8,5 +9,9 @@ const PageContainer = styled.div`
 `;
 
 export function HomePage() {
-  return <PageContainer>Hello World!</PageContainer>;
+  return (
+    <PageContainer>
+      <Navbar />
+    </PageContainer>
+  );
 }
